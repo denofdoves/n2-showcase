@@ -278,6 +278,6 @@ function main() {
     listenForInputs();
 }
 
-window.onload = () => {
+setTimeout(() => {
     main();
-};
+}, 1000);
