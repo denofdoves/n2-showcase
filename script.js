@@ -172,6 +172,7 @@ function main() {
         showcaseTemplate.onload = () => ctx.drawImage(showcaseTemplate, 0, 0);
 
         function generateShowcase() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.drawImage(showcaseTemplate, 0, 0);
             const { shirt, pants, colorValue: skinColor } = settings;
             // DRAWS SKIN COLOR
